@@ -1,0 +1,155 @@
+<html>
+<head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.redeem-section {
+    margin-bottom: 20px;
+}
+
+.redeem-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.results-section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Redemption</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Free Fire Redemption Center</h1>
+    </header>
+    
+    <main>
+        <section class="redeem-section">
+            <h2>Redeem Your Code</h2>
+            <form id="redeem-form">
+                <div class="form-group">
+                    <label for="code">Enter your UID:</label>
+                    <input type="text" id="code" name="code" placeholder="XXXX-XXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="item">Select item:</label>
+                    <select id="item" name="item">
+                        <option value="diamonds">Diamonds</option>
+                        <option value="coins">Coins</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="login-method">Login Method:</label>
+                    <input type="radio" id="email" name="login-method" value="email" checked>
+                    <label for="email">Email</label>
+                    <input type="radio" id="facebook" name="login-method" value="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <button type="submit">Redeem</button>
+            </form>
+        </section>
+        
+        <section class="results-section" id="results">
+            <!-- Redemption results will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Free Fire Redemption Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
